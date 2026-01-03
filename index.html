@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>선물받기 미니게임</title>
+  <title>용용이게임 - 선물받기</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,22 +13,28 @@
     <div id="hud">
       <div class="pill">점수: <span id="score">0</span></div>
       <div class="pill">목숨: <span id="lives">3</span></div>
-      <div class="pill">최고: <span id="best">0</span></div>
+      <button id="soundBtn" class="pill btn" aria-label="사운드 토글">🔊</button>
     </div>
 
     <div id="overlay" class="show">
       <div class="card">
+        <div class="title">🎮 용용이게임</div>
         <h1>🎁 선물받기</h1>
         <p>
-          캐릭터를 좌우로 움직여 <b>선물</b>을 받으면 점수가 올라갑니다.<br/>
-          <b>까만 숯(꽝)</b>을 받으면 목숨이 줄어요.
+          위에서 떨어지는 <b>선물🎁</b>을 캐릭터가 좌우로 움직이며 받아요.<br/>
+          <b>폭탄💣</b>은 피하세요!
         </p>
         <ul>
-          <li><b>터치/드래그</b>: 손가락으로 캐릭터 이동</li>
-          <li><b>짧게 탭</b>: 탭한 방향으로 이동</li>
+          <li>선물 받으면 <b>점수 +1</b></li>
+          <li>폭탄 맞으면 <b>목숨 -1</b> (목숨 0이면 게임오버)</li>
+          <li>시간이 지날수록 <b>속도 증가</b> (난이도 자동 상승)</li>
         </ul>
+        <div class="controls">
+          <div><b>드래그</b>: 손가락으로 캐릭터 이동</div>
+          <div><b>탭</b>: 탭한 위치로 이동</div>
+        </div>
         <button id="startBtn">시작</button>
-        <p class="tiny">모바일 브라우저(사파리/크롬)에서 바로 실행됩니다.</p>
+        <p class="tiny">아이폰/안드로이드 사파리·크롬에서 바로 실행됩니다.</p>
       </div>
     </div>
 
