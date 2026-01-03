@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>선물받기 미니게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game"></canvas>
+
+    <div id="hud">
+      <div class="pill">점수: <span id="score">0</span></div>
+      <div class="pill">목숨: <span id="lives">3</span></div>
+      <div class="pill">최고: <span id="best">0</span></div>
+    </div>
+
+    <div id="overlay" class="show">
+      <div class="card">
+        <h1>🎁 선물받기</h1>
+        <p>
+          캐릭터를 좌우로 움직여 <b>선물</b>을 받으면 점수가 올라갑니다.<br/>
+          <b>까만 숯(꽝)</b>을 받으면 목숨이 줄어요.
+        </p>
+        <ul>
+          <li><b>터치/드래그</b>: 손가락으로 캐릭터 이동</li>
+          <li><b>짧게 탭</b>: 탭한 방향으로 이동</li>
+        </ul>
+        <button id="startBtn">시작</button>
+        <p class="tiny">모바일 브라우저(사파리/크롬)에서 바로 실행됩니다.</p>
+      </div>
+    </div>
+
+    <div id="toast"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
